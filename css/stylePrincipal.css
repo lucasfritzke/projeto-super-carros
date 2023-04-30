@@ -1,8 +1,12 @@
-body{
+body {
+    position: relative;
+    font-size: 15pt;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
-header{
-    font-size: 40pt;
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -13,38 +17,70 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
+.logo {
     text-align: center;
     width: 30%;
-    
+
 }
 
-#logomarca{
-    width:40% ;
+#logomarca {
+    width: 40%;
 }
 
-.titulo{
+.titulo {
     display: block;
     text-align: left;
     width: 50%;
 
 }
-#titulo{
+
+#titulo {
     margin: 0;
     font-size: 4rem;
 }
-#slogan{
+
+#slogan {
     margin: 0;
     font-size: 2rem;
 }
 
-.usuario{
+.usuario {
     text-align: center;
     display: block;
     width: 20%;
 }
 
-#icone-usuario{
-   
+#icone-usuario {
+
     width: 20%;
+}
+
+/*MAIN*/
+
+main {
+
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 10px;
+    bottom: 0;
+    
+}
+
+.rodape {
+
+    display: flex;
+
+}
+
+.info-equipe {
+    text-align: center;
+    font-size: 1rem;
+
 }
