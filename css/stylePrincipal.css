@@ -1,0 +1,37 @@
+
+.bloco-cabeçalho {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center stretch; 
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0D0D0D;
+    width: 100%;
+}
+
+#logomarca{
+    
+    width: 150px;
+}
+
+.bloco-cabeçalho h1{
+  
+    size: 0.8em;
+    
+}
+
+.bloco-cabeçalho h2{
+    size: 0.5em;
+}
+
+#icone-usuario{
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
