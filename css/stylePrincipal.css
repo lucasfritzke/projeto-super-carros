@@ -1,10 +1,13 @@
-
+body{
+    margin: 0;
+}
 header{
     font-size: 40pt;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     align-items: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +20,7 @@ header{
 }
 
 #logomarca{
-    width:30% ;
+    width:40% ;
 }
 
 .titulo{
@@ -28,11 +31,11 @@ header{
 }
 #titulo{
     margin: 0;
-    font-size: 100%;
+    font-size: 4rem;
 }
 #slogan{
     margin: 0;
-    font-size: 50%;
+    font-size: 2rem;
 }
 
 .usuario{
@@ -43,5 +46,5 @@ header{
 
 #icone-usuario{
    
-    width: 30%;
+    width: 20%;
 }
