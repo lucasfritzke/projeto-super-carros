@@ -1,37 +1,47 @@
 
-.bloco-cabeçalho {
-    background-color: #F2F2F2;
+header{
+    font-size: 40pt;
     display: flex;
-    justify-content: space-around;
-    align-items: center stretch; 
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    align-items: right;
     font-family: Arial, Helvetica, sans-serif;
-    color: #0D0D0D;
-    width: 100%;
+}
+
+.logo{
+    text-align: center;
+    width: 30%;
+    
 }
 
 #logomarca{
-    
-    width: 150px;
+    width:30% ;
 }
 
-.bloco-cabeçalho h1{
-  
-    size: 0.8em;
-    
+.titulo{
+    display: block;
+    text-align: left;
+    width: 50%;
+
+}
+#titulo{
+    margin: 0;
+    font-size: 100%;
+}
+#slogan{
+    margin: 0;
+    font-size: 50%;
 }
 
-.bloco-cabeçalho h2{
-    size: 0.5em;
+.usuario{
+    text-align: center;
+    display: block;
+    width: 20%;
 }
 
 #icone-usuario{
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 1000,
-  'GRAD' 0,
-  'opsz' 48
+   
+    width: 30%;
 }
