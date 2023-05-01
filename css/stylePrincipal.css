@@ -71,11 +71,15 @@ main {
 
 /*MENU*/
 
-nav, li{
+nav{
     background-color: black;
-    width: 15%;
+    width: 10%;
     text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+} 
 
 li, a {
     text-decoration: none;
