@@ -1,0 +1,258 @@
+/* CORPO INTEIRO*/
+body {
+    position: relative;
+    margin: 0;
+    top: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    background-color: rgba(6, 6, 57, 0.881);
+}
+
+.extremidades {
+    background-color: #F2F2F2;
+
+}
+
+
+/* CABEÇALHO*/
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    /* Torna a Tag um conteiner*/
+    justify-content: space-between;
+    /*Define o alinhamento dos itens*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 180px;
+}
+
+#espaco-logo {
+    padding-left: 7%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+}
+
+#usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 190px;
+    font-size: 0.7em;
+}
+
+#img-user {
+    width: 35px;
+    height: auto;
+}
+
+
+/* CONTEUDO*/
+
+
+
+main {
+    top: 180px;
+    width: 100%;
+    display: flex;
+    /* Torna a Tag um conteiner*/
+    justify-content: flex-start;
+    /*Define o alinhamento dos itens*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+nav {
+    display: inline-block;
+}
+
+/* -- MENU -- */
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+
+
+/*-- MENU HORIZONTAL --*/
+#menu-horizontal {
+    background-color: black;
+    width: 100%;
+    height: 25px;
+
+
+
+}
+
+#item-menu-horizontal {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+/*-- MENU ESQUERDA --*/
+#menu-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 10%;
+    max-width: 15%;
+    background-color: #D95829;
+}
+
+#item-menu-esquerda {
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-size: 0.8em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 400px) {
+    #menu-esquerda {
+        display: none;
+    }
+
+
+    #menu-horizontal {
+        display: inline;
+        font-size: 0.6em;
+
+    }
+
+}
+
+
+@media screen and (min-width: 400px) {
+    #menu-esquerda {
+        display: inline;
+    }
+
+    #menu-horizontal {
+        display: none;
+    }
+
+}
+
+/*CONTEUDO*/
+
+
+#apresentacao {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 0.5em;
+
+}
+
+#img-apresentacao {
+    padding: 15px;
+    min-height: auto;
+    min-width: 250px;
+    max-width: 50%;
+    max-height: auto;
+    border-radius: 6%;
+    margin: 25px;
+
+}
+
+#descricao-apresentacao {
+    background-color: #161414;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.7em;
+    min-width: 250px;
+    max-width: 30%;
+    height: auto;
+    text-align: justify;
+    margin: 25px;
+    border-radius: 10%;
+}
+
+@media screen and (max-width:400px) {
+    #apresentacao {
+        width: 100%;
+        font-size: 0.3em;
+
+    }
+
+    #descricao-apresentacao {
+
+        font-size: 1.8em;
+    }
+
+}
+
+
+
+/*RODAPÉ*/
+
+footer {
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    /* Torna a Tag um conteiner*/
+    justify-content: center;
+    /*Define o alinhamento dos itens*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+#logo-furb {
+    padding: 6px;
+    width: 130px;
+    height: auto;
+}
+
+#infos {
+    font-size: 0.8em;
+    padding-right: 2%;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+
+    #logo-furb {
+        padding: 6px;
+        width: 90px;
+        height: auto;
+    }
+    
+    #infos {
+        font-size: 0.6em;
+    }  
+    
+
+}
