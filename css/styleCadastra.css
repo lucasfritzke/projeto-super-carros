@@ -1,0 +1,73 @@
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f4f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 28vh;
+}
+
+#espaco-logo{
+    width: 40px;
+}
+
+#logomarca {
+    width: 150px
+}
+
+.titulo {
+    display: block;
+    text-align: left;
+    width: 50%;
+
+}
+
+#titulo {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+}
+
+#slogan {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.usuario {
+    text-align: center;
+    display: block;
+    width: 20%;
+}
+
+#icone-usuario {
+    padding-right: 0;
+    width: 20%;
+}
+/*FIM DO HEADER*/
+
+
+
+/* FOOTER */
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 10px;
+    bottom: 0;
+
+}
+
+.rodape {
+
+    display: flex;
+
+}
+
+.info-equipe {
+    text-align: center;
+    font-size: 1rem;
+
+}

@@ -1,28 +1,76 @@
 body {
-	background-color: #00a6ff;
+	background-color: #e2dfdf;
 	font-family: Arial, sans-serif;
-	color: #fff;
+}
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f4f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 28vh;
 }
 
+#espaco-logo{
+    width: 40px;
+}
+
+#logomarca {
+    width: 150px
+}
+
+.titulo {
+    display: block;
+    text-align: left;
+    width: 50%;
+
+}
+
+#titulo {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+}
+
+#slogan {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.usuario {
+    text-align: center;
+    display: block;
+    width: 20%;
+}
+
+#icone-usuario {
+    padding-right: 0;
+    width: 20%;
+}
+/*FIM DO HEADER*/
+
 .login-enter {
-	background-color: rgba(64, 255, 0, 0.2);
+	background-color: rgba(205, 223, 228, 0.2);
 	width: 400px;
 	margin: 100px auto;
-	padding: 30px;s
+	padding: 30px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #000000;
 }
 
 .center {
-    background-color: #333;
+    background-color: #e0dfdc;
 	margin: 10px auto;
 	padding: 10px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 10px #1408ff;
+	box-shadow: 0px 0px 10px #3e3c38;
 }
 
 .center > a {
-    color: #02ff0a;
+    color: #e6970f;
     font-style: bold;
 }
 
@@ -49,7 +97,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-	background-color: #008CBA;
+	background-color: #ec7404;
 	color: #fff;
     font-size: 20px;
 	border: none;
@@ -60,5 +108,28 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-	background-color: #0077B3;
+	background-color: #ce7706;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 10px;
+    bottom: 0;
+
+}
+
+.rodape {
+
+    display: flex;
+
+}
+
+.info-equipe {
+    text-align: center;
+    font-size: 1rem;
+
 }
