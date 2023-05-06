@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-login.css">
     <link rel="stylesheet" href="/css/style-principal.css">
+    
 
     <!-- Icone aba-->
     <title>Super Carros</title>
@@ -28,7 +30,7 @@
                 <li><a href=""  class="item-menu">Comprar</a></li>
                 <li><a href=""  class="item-menu">Vender</a></li>
                 <li><a href=""  class="item-menu">Contato</a></li>
-                <li><a href="/pag-login.html" class="item-menu">Login</a></li>
+                <li><a href="/login.html" class="item-menu">Login</a></li>
                 <li><a href=""  class="item-menu">Sobre</a></li>
             </ul>
 
@@ -36,34 +38,19 @@
 
         <div id="conteudo">
 
-            <article class="descricao">
-
-                <img src="/img/foto-02.jpg" alt="" class="img-descricao">
-
-                <p class="texto-descricao">
-                    A Super Car é uma revendedora de carros de qualidade com uma vasta seleção de veículos novos e
-                    usados.
-                    Nós nos esforçamos para oferecer aos nossos clientes a melhor experiência de compra de carros
-                    possível,
-                    desde a primeira visita até a entrega do veículo.
-                </p>
-
-            </article>
-
-            <article class="descricao">
-
-                
-
-                <p class="texto-descricao">
-                    Nosso objetivo é ajudá-lo a encontrar o carro dos seus sonhos, com base em suas necessidades e
-                    orçamento. Temos uma equipe de profissionais altamente treinados que estão prontos para ajudá-lo a
-                    encontrar o carro certo para você.
-                </p>
-
-                <img src="/img/foto-01.jpg" alt="" class="img-descricao">
-
-
-            </article>
+            <div class="login-enter">
+                <h1>Login</h1>
+                <form>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" placeholder="Nome de usuário">
+        
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Sua senha">
+        
+                    <button type="submit">Entrar</button>
+                    <div class="center">Ainda não tem uma conta? <a href="cadastraLogin.html">Crie uma!</a></div>
+                </form>
+            </div>
 
 
         </div>
