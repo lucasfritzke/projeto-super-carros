@@ -1,0 +1,196 @@
+html {
+    min-width: 300px;
+}
+
+body {
+    margin: 0;
+    min-width: 300px;
+    background-color: rgb(0, 0, 30);
+    background: linear-gradient(135deg, rgb(0, 0, 30), rgb(0, 0, 30));
+}
+
+.extremidades {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #F2F2F2;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/*CABEÇALHO*/
+
+header {
+    top: 0;
+    /*Para ficar fixado no inicio da página*/
+    height: 20vh;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 120px;
+    min-height: 50px;
+    height: auto;
+    padding-left: 20px;
+}
+
+#img-user {
+    width: 35px;
+    height: 35px;
+    padding: 35px;
+}
+
+
+
+
+
+/*MAIN*/
+
+
+/*MENU*/
+main {
+    display: flex;
+    width: 100%;
+    min-height: 65vh;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-height: 15vh;
+    max-width: 15%;
+    min-width: 15vh;
+}
+
+.lista-menu{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+li{
+    list-style: none;
+}
+
+.item-menu {
+    padding: 1px;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*CONTEUDO*/
+
+#conteudo{
+    display: flex;
+    width: 90%;
+    min-height: 60vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.descricao{
+    background-color:  #ccc8c4;
+    width: 80%;
+    min-height: 35vh;
+    border-radius: 2%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-descricao{
+    padding: 20px;
+    max-width: 35%;
+    min-width: 35vh;
+}
+
+
+.texto-descricao{
+    max-width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+/*RODAPÉ*/
+
+footer {
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+}
+
+#logo-furb {
+    padding: 6px;
+    width: 80px;
+    height: auto;
+}
+
+#infos {
+    font-size: 0.8em;
+    padding-right: 2%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .lista-menu{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .menu {
+        min-width: 100%;
+        min-height: 0;
+        min-height: 40px;
+        align-items: center;
+    }
+
+    #conteudo{
+        width: 100%;
+    }
+    
+    .texto-descricao{
+        max-width: 70%;
+    }
+
+}
