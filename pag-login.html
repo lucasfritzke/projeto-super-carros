@@ -15,15 +15,24 @@
 
 </head>
 
-<body>
+<body onload="getStatusLog()">
 
     <header class="extremidades">
 
         <a href="/pag-principal.html"><img src="/img/logo-sf.png" alt="Logo Loja" id="logo"> </a>
 
-        <div class='log-user'>
+        <div class='log-user' id="nao-logado">
             <img src="/img/icone-usuario.png" alt="" id="img-user">
-            <p id="status-login">Usuário não autenticado</p>
+            <p id="status-nao-login"> Usuário não autenticado</p>
+        </div>
+
+        <div class='log-user' id="logado">
+            <a href="/pag-cadastro.html">
+                <img src="/img/user-logado.png" alt="" id="img-user">
+            </a>
+                <p id="status-login"> Usuário não autenticado</p>
+                <button onclick="logOff()" id="sair">Sair</button>
+            
         </div>
 
     </header>

@@ -7,15 +7,43 @@ function autenticar() {
 
     if (user.length !== 0 && password.length !== 0) {
 
-        localStorage.setItem("Nome de Usuario", user)
-        localStorage.setItem("Senha: ", password)
-        document.getElementById('status-login').innerHTML =  'ola mundo';
-
-
+        localStorage.setItem("Usuario", user)
+        localStorage.setItem("Senha: ", password);
+        getStatusLog();
+        window.open('/pag-principal.html');
 
     } else {
-        alert('E-mail ou senha não inseridos')
+        alert('Informe os dados de autenticação')
+        
     }
 
 
+}
+
+
+function getStatusLog(){
+
+    
+    var user = localStorage.getItem('Usuario');
+
+    if(user.length > 0){
+        document.getElementById('status-login').innerText = user;
+        document.getElementById('logado').style = 'display: flex;';
+        document.getElementById('nao-logado').style = 'display: none;';
+    } else {
+        document.getElementById('logado').style = 'display: none;'
+        document.getElementById('nao-logado').style = 'display: flex;'
+    }
+
+
+
+}
+
+function logOff(){
+
+    localStorage.clear();
+    document.getElementById('logado').style = 'display: none;'
+    document.getElementById('nao-logado').style = 'display: flex;'
+    window.open('/pag-principal.html');
+    
 }
