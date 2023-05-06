@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/login.js"></script>
     <link rel="stylesheet" href="css/style-login.css">
     <link rel="stylesheet" href="/css/style-principal.css">
-    
+
 
     <!-- Icone aba-->
     <title>Super Carros</title>
 
 </head>
+
 <body>
 
     <header class="extremidades">
 
-        <a href="/principal.html"><img src="/img/logo-sf.png" alt="Logo Loja" id="logo"> </a>
+        <a href="/pag-principal.html"><img src="/img/logo-sf.png" alt="Logo Loja" id="logo"> </a>
 
-        <img src="/img/icone-usuario.png" alt="" id="img-user">
+        <div class='log-user'>
+            <img src="/img/icone-usuario.png" alt="" id="img-user">
+            <p id="status-login">Usuário não autenticado</p>
+        </div>
 
     </header>
 
@@ -27,11 +33,11 @@
         <nav class="menu">
 
             <ul class='lista-menu'>
-                <li><a href=""  class="item-menu">Comprar</a></li>
-                <li><a href=""  class="item-menu">Vender</a></li>
-                <li><a href=""  class="item-menu">Contato</a></li>
+                <li><a href="" class="item-menu">Comprar</a></li>
+                <li><a href="" class="item-menu">Vender</a></li>
+                <li><a href="" class="item-menu">Contato</a></li>
                 <li><a href="/login.html" class="item-menu">Login</a></li>
-                <li><a href=""  class="item-menu">Sobre</a></li>
+                <li><a href="" class="item-menu">Sobre</a></li>
             </ul>
 
         </nav>
@@ -43,11 +49,11 @@
                 <form>
                     <label for="username">Usuário:</label>
                     <input type="text" id="username" name="username" placeholder="Nome de usuário">
-        
+
                     <label for="password">Senha:</label>
                     <input type="password" id="password" name="password" placeholder="Sua senha">
-        
-                    <button type="submit">Entrar</button>
+
+                    <button type="submit" onclick="autenticar()">Entrar</button>
                     <div class="center">Ainda não tem uma conta? <a href="cadastraLogin.html">Crie uma!</a></div>
                 </form>
             </div>
@@ -67,9 +73,10 @@
         </div>
 
         <img src="/img/Layer1000.png" alt="" id="logo-furb">
-        
+
 
     </footer>
-    
+
 </body>
+
 </html>

@@ -28,6 +28,7 @@ body {
 
 header {
     top: 0;
+    position: fixed;
     /*Para ficar fixado no inicio da página*/
     height: 20vh;
     justify-content: space-between;
@@ -37,13 +38,29 @@ header {
     width: 120px;
     min-height: 50px;
     height: auto;
-    padding-left: 20px;
+    padding-left: 35px;
+}
+
+
+.log-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    max-height: 18vh;
+    padding-right: 30px;
+
+}
+#status-login{
+    font-size: 0.5;
+    text-align: center;
 }
 
 #img-user {
     width: 35px;
     height: 35px;
-    padding: 35px;
+    padding: 15px;
 }
 
 
@@ -55,6 +72,7 @@ header {
 
 /*MENU*/
 main {
+    margin-top: 20vh;
     display: flex;
     width: 100%;
     min-height: 65vh;

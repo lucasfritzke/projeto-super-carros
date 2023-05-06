@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/login.js"></script>
     <link rel="stylesheet" href="css/style-login.css">
     <link rel="stylesheet" href="/css/style-principal.css">
-
-
     <!-- Icone aba-->
     <title>Cadastro</title>
 
@@ -18,9 +17,12 @@
 
     <header class="extremidades">
 
-        <a href="/principal.html"><img src="/img/logo-sf.png" alt="Logo Loja" id="logo"> </a>
+        <a href="/pag-principal.html"><img src="/img/logo-sf.png" alt="Logo Loja" id="logo"> </a>
 
-        <img src="/img/icone-usuario.png" alt="" id="img-user">
+        <div class='log-user'>
+            <img src="/img/icone-usuario.png" alt="" id="img-user">
+            <p id="status-login">Usuário não autenticado</p>
+        </div>
 
     </header>
 
@@ -48,15 +50,15 @@
                     <div>
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome"><br>
-    
+
                         <label for="palavra">Palavra chave:</label>
                         <input type="text" id="palavra"><br>
-    
-    
+
+
                         <label for="num">Número Favorito</label>
                         <input type="number" id="num"> <br>
-    
-    
+
+
                     </div>
                     <div id="radiogroup">
                         <input type="radio" id="sexo1" name="sexo1" value="masc">
@@ -64,22 +66,22 @@
                         <input type="radio" id="sexo2" name="sexo2" value="fem" />
                         <label for="sexo2">Feminino</label> <br>
                     </div>
-    
+
                     <div id="datepicker">
                         <label for="dataNasc">Data de nascimento:</label>
                         <input type="date" id="dataNasc" name="dataNasc"> <br>
                     </div>
-    
+
                     <div id="checkbox">
                         <label for="termo">Aceitar termos de serviço</label>
                         <input type="checkbox" id="termo" name="termo"> <br>
                     </div>
-    
+
                     <button onclick="">Submit</button>
 
                 </div>
 
-                
+
 
 
             </div>
