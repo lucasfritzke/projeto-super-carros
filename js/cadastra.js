@@ -1,18 +1,39 @@
 function mudaCorCustom(){
-    var r = document.querySelector(":root");
-    r.style.setProperty("--hBackColor","aquamarine");
-    r.style.setProperty("--fBackColor","aquamarine");
-    r.style.setProperty("--mBackColor","aquamarine");
-    r.style.setProperty("--bBackColor","aquamarine");
-    r.style.setProperty("--lColor","white");
-    r.style.fontFamily = "monospace";
+    var parag = document.getElementsByTagName("p");
+    var div = document.getElementsByTagName("div");
+
+    for(i=0;i<parag.length;i++){
+        parag[i].style.color = "white";
+        parag[i].style.backgroundColor = "black";
+        parag[i].style.fontFamily = "monospace";
+    }
+    for(i=0;i<div.length;i++){
+        div[i].style.color = "white";
+        div[i].style.backgroundColor = "black";
+        div[i].style.fontFamily = "monospace";
+    }
+
 }
 function mudaCorNormal(){
-    var r = document.querySelector(":root");
-    r.style.setProperty("--hBackColor","#f4f0f0");
-    r.style.setProperty("--fBackColor","#f4f0f0");
-    r.style.setProperty("--mBackColor","#white");
-    r.style.setProperty("--bBackColor","#white");
-    r.style.setProperty("--lColor","black");
-    r.style.fontFamily = "arial";
+    //will return 2 arrays with the elements of this tags names.
+    var parag = document.getElementsByTagName("p");
+    var div = document.getElementsByTagName("div");
+
+    for(i=0;i<parag.length;i++){
+        parag[i].style.color = "black";
+        parag[i].style.backgroundColor = "#F2F2F2";
+        parag[i].style.fontFamily = "arial";
+    }
+    for(i=0;i<div.length;i++){
+        div[i].style.color = "black";
+        div[i].style.backgroundColor = "#F2F2F2";
+        div[i].style.fontFamily = "arial";
+    }
+
+    document.getElementById("conteudo").style.backgroundColor = "#00001e";
+    document.getElementById("descricao").style.backgroundColor = "#ccc8c4";
+    var child = document.getElementById("descricao").children;
+    for(i=0;i<child.length;i++){
+        child[i].style.backgroundColor = "#ccc8c4"
+    }
 }

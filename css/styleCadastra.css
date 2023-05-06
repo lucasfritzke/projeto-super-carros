@@ -19,6 +19,7 @@ main{
 }
 body{
     background-color: var(--bBackColor);
+    text-align: center;
 }
 
 /*Header*/
